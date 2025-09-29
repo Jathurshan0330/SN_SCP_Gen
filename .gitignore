@@ -4,3 +4,4 @@ scp_results
 models/__pycache__/
 prompts/__pycache__/
 scp_utils/__pycache__/
+new_kbs
