@@ -1,4 +1,4 @@
-# Survivorship Navigator: Personalized Survivorship Care Plan Generation using Large Language Models (AMIA 2025 Annual Symposium)
+# Survivorship Navigator (AMIA 2025 Annual Symposium)
 
 <img width="1443" height="694" alt="logo" src="https://github.com/user-attachments/assets/0af97463-e75c-45df-92ca-a5ba160d5a55" />
 
