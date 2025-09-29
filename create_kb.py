@@ -343,7 +343,7 @@ def create_and_store_vector_index_for_KB(processed_knowledge_path,save_vector_in
 
 if __name__ == '__main__':
     
-    reference_file_path='/home/jp65/Survivorship_Care/Codes/test_kb' #'Path to the folder containing the pdfs with the guidelines'
+    reference_file_path='./test_kb' #'Path to the folder containing the pdfs with the guidelines'
     
     
     
