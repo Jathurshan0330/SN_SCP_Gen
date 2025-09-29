@@ -7,17 +7,48 @@ Cancer survivorship care plans (SCPs) are critical tools for guiding long-term f
 
 ## 📦 Installation
 ```
-conda create --name surv_navigator python=3.10
+conda env create -f environment.yml
+conda activate surv_navigator
+```
 
+create a .env file and set the following env variables
+```
+AZURE_OPENAI_API_KEY = ''
+OPENAI_API_BASE =  ''
+OPENAI_API_VERSION = ''
+OPENAI_API_TYPE = "azure"
 
+OPENAI_API_KEY = ''  # need only to create the knowledge base
 ```
 
 
 ## 🏃 Survivorship Navigator
-
+Add the patient note to a .txt file, change the path in survivorship_navigator.py, and run the following:
+```
+python survivorship_navigator.py
+```
 
 ## 🔍 Create Knowledge Base From Your PDFs
+Add the PDFs of the guidelines that should be utilized in SCP creation to one folder, and set the reference_file_path in create_kb.py. The vector knowledge bases will be created in the ./new_kbs folder. The group-wise_separated_knowledge.json is human-readable and can be used to validate the created knowledge bases. 
+Note: OpenAI API is required here not Azure OpenAI
+```
+python create_kb.py
+```
 
 
 
 ## 📚 Cite Survivorship Navigator
+If you find our work or this repository useful, please consider giving it a star ⭐ and citing it.
+```
+@article{pradeepkumar2025survivorship,
+  title={Survivorship Navigator: Personalized Survivorship Care Plan Generation using Large Language Models},
+  author={Pradeepkumar, Jathurshan and Pankaj Kumar, Shivam and Reamer, Courtney Bryce and Dreyer, Marie and Patel, Jyoti and Liebovitz, David and Sun, Jimeng},
+  journal={medRxiv},
+  pages={2025--03},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+```
+
+We appreciate your interest in our work! 😃😃😃😃😃
+
