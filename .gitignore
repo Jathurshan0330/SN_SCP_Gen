@@ -1,5 +1,5 @@
 .env
-sample_patient_data.txt
+sample_patient_data_24.txt
 scp_results
 models/__pycache__/
 prompts/__pycache__/
